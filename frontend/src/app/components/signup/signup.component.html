@@ -1,7 +1,11 @@
 <div class="container">
+    <div class="logo">
+        <mat-icon class="logo-element">shopping_bag</mat-icon>
+        <span class="logo-element">Expense Tracker</span>
+    </div>
     <div class="box">
         <div class="title">
-            <h1>Signup</h1>
+            <h1>Sign in</h1>
         </div>
         <div class="content">
             <form [formGroup]="signupForm">
@@ -38,7 +42,9 @@
                     }
                 </mat-form-field>
             </form>
-            <button mat-flat-button class="signup-btn" (click)="onSignup()" [disabled]="isInvalidForm()">Signup</button>
+            <button mat-flat-button class="signup-btn" (click)="onSignup()" [disabled]="isInvalidForm()">Sign in</button>
+            <hr>
+            <p>Already have an account? <a class="login-link" href="/login">Login.</a></p>
         </div>
     </div>
 </div>

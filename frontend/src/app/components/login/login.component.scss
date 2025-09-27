@@ -1,17 +1,26 @@
 .container {
     width: 100vw;
-    height: calc(100vh - 64px);
-    background: url('../../../../public/login-page-bg.jpg');
-    background-size: cover;
+    height: calc(100vh);
+    // background-color: url('../../../../public/login-page-bg.jpg');
+    // background-size: cover;
+    .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 32px 0;
+        font-size: 32px;
+        color: #ba005c;
+    }
     .box {
         position: absolute;
+        top: 40%;
         left: 50%;
-        top: 50%;
         transform: translate(-50%, -50%);
         border: 2px solid #ba005c;
-        width: 450px;
-        height: 350px;
-        border-radius: 5px;
+        width: 400px;
+        height:390px;
+        border-radius: 10px;
 
         .title {
             width: 100%;
@@ -35,9 +44,27 @@
             }
         }
         .login-btn {
-            margin-top: 20px;
+            // margin-top: 10px;
+            margin-bottom: 20px;
             width: 100%;
             padding: 25px;
-        }                                                                                                                                         
+        }
+        
+        hr {
+            margin-bottom: 15px;
+        }
+        
+        p {
+            text-align: center;
+            .signup-link {
+                text-decoration: none;
+                border: none;
+                cursor: pointer;
+                color: #ba005c;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }                                                                                                                                      
     }
 }

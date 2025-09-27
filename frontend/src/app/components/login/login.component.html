@@ -1,4 +1,9 @@
 <div class="container">
+    <div class="logo">
+        <mat-icon class="logo-element">shopping_bag</mat-icon>
+        <span class="logo-element">Expense Tracker</span>
+    </div>
+
     <div class="box">
         <div class="title">
             <h1>Login</h1>
@@ -26,6 +31,8 @@
                 </mat-form-field>
             </form>
             <button mat-flat-button class="login-btn" (click)="onLogin()" [disabled]="isInvalidForm()">Login</button>
+            <hr>
+            <p>Don't have an account? <a class="signup-link" href="/signup">Create now.</a></p>
         </div>
     </div>
 </div>
