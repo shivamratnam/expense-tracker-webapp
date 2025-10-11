@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    .element {
+        padding: 16px;
+
+        &.graphs {
+            .card {
+                padding: 16px;
+                width: 250px;
+                background: #fff;
+                box-shadow: 0 0 2px 0 rgba(145,158,171,.3),0 12px 24px -4px rgba(145,158,171,.12);
+                
+                h1, h2, h3, h4, h5, h6 {
+                    margin: 0;
+                    font-weight: 500;
+                }
+                .mat-mdc-card-title {
+                    font-size: 14px;
+                }
+                .mat-mdc-card-content {
+                    margin: 10px 0;
+                }
+                .mat-mdc-card-header, .mat-mdc-card-content {
+                    padding: 0;
+                }
+                .mat-divider {
+                    border-top-width: 1px;
+                    border-top-color: #e5eaef;
+                }
+                .mat-mdc-card-footer {
+                    color: #7184ad;
+
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .stats {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        &.transaction-history {
+            .mat-mdc-table {
+                background: #fff;
+                box-shadow: 0 0 2px 0 rgba(145,158,171,.3),0 12px 24px -4px rgba(145,158,171,.12);
+                border-radius: 10px;
+            }
+
+            .mat-mdc-header-cell{
+                font-weight: 500;
+            }
+            
+            .mat-mdc-cell {
+                color: #7184ad;
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+            .mat-mdc-paginator {
+                background: #fff;
+                box-shadow: 0 0 4px 0 rgba(145,158,171,.3),0 12px 24px -4px rgba(145,158,171,.12);
+            }
+        }
+    }
+}
